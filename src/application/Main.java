@@ -49,8 +49,9 @@ public class Main extends Application {
 		});
 
 
-
-		player = new Player("file:///E:/aWorkspaceNew/MediaPlayer/resources/StarWars.mp4");
+		//replace filePath with path of your file
+		String filePath = "file:///E:/aWorkspaceNew/MediaPlayer/resources/test.mp3";
+		player = new Player(filePath);
 		player.setTop(menu);
 		Scene scene = new Scene(player, 720, 535, Color.BLACK);
 		primaryStage.setScene(scene);
